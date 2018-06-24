@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{course.course_name}}二维码</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div style="text-align: center; border: green solid 1px;">
+    <img alt="" src={{picurl}} style="margin: 0 auto;">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button block color="primary" (click)="save()">保存图片</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
